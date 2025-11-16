@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <!--Nav Bar Include-->
         <?php include "menu.php"; ?>
         <h1>Rocket Corp Tourism Company</h1>
     </header>

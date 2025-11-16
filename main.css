@@ -1,3 +1,24 @@
 body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: beige;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav{
+
+    background-color: rgb(253, 193, 115);
+    padding: .5%;
+}
+
+input {
+    display: block;
+}
+
+header h1{
+    padding-left: .5%;
+}
+
+main{
+    padding-left: .5%;
 }

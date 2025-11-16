@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Application</title>
+    <!-- Link to Global CSS file -->
+    <link rel="stylesheet" href="main.css">
+    <!--Link to the validator.js file-->
     <script src="validator.js"></script>
 </head>
 
 <body>
     <header>
+        <!--Nav Bar Include-->
         <?php include "menu.php"; ?>
         <h1>Fly with Rocket Corp</h1>
     </header>
