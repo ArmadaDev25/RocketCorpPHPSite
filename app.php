@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="validator.js"></script>
 </head>
 
 <body>
@@ -15,9 +16,12 @@
         <h2>
             Do you like ROCKETS? Know how to fly them? If you answered yes, fill out our pilot application form.
         </h2>
+
+        <!--Div Message that is displayed if the data in the form is not valid-->
+        <div id="errorMessage"></div>
         
         <!--Form Section for handling input from the user-->
-        <form method="post" id="frmApp" name="frmApp" action="app.php">
+        <form method="post" id="frmApp" name="frmApp" action="app.php" onsubmit="return validateForm();">
             
             <!--First name input area-->
             <label for="txtFirstName">First Name:</label>
@@ -35,7 +39,7 @@
             <label for="trainingCheck">Competed Recent Training?</label>
             <input type="checkbox" id="trainingCheck" name="trainingCheck" value="isTrained">
 
-            <!-- Complete recent training checkbox-->
+            <!-- Valid Entry checkbox-->
             <label for="validCheck">Is Everything Entered Correct To The Best Of Your Knowledge?</label>
             <input type="checkbox" id="validCheck" name="validCheck" value="True">
             
