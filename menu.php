@@ -1,4 +1,4 @@
 <?php
-    echo "<a></a> | <a></a>"
+    echo "<a href='index.php'>Home</a> | <a href='app.php'>Application</a>"
 
 ?>
