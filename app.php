@@ -21,11 +21,24 @@
             
             <!--First name input area-->
             <label for="txtFirstName">First Name:</label>
-            <input type="text" id="txtFirstName" name="txtFirstName" placeholder="First Name" required>
+            <input type="text" id="txtFirstName" name="txtFirstName" placeholder="First Name">
             
             <!--Last name input area-->
             <label for="txtLastName">Last Name:</label>
-            <input type="text" id="txtFirstName" name="txtFirstName" placeholder="Last Name" required>
+            <input type="text" id="txtLastName" name="txtLastName" placeholder="Last Name">
+
+            <!--Number of years flying input area-->
+            <label for="txtExpYears">How Many Years Have You Been Flying?</label>
+            <input type="text" id="txtExpYears" name="txtExpYears" placeholder="Years Flying">
+
+            <!-- Complete recent training checkbox-->
+            <label for="trainingCheck">Competed Recent Training?</label>
+            <input type="checkbox" id="trainingCheck" name="trainingCheck" value="isTrained">
+
+            <!-- Complete recent training checkbox-->
+            <label for="validCheck">Is Everything Entered Correct To The Best Of Your Knowledge?</label>
+            <input type="checkbox" id="validCheck" name="validCheck" value="True">
+            
 
             <!--Submit Button for Form-->
             <input type="submit" value="Submit Application">
