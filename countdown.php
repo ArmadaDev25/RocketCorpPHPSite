@@ -34,7 +34,7 @@
             // This variable will grab the current time
             let currentTime = new Date().getTime();
 
-            consol.log("Timer Values")
+            console.log("Timer Values")
             console.log(countdownTimer)
             console.log(currentTime)
 
@@ -58,6 +58,11 @@
             console.log(minutes)
             console.log(seconds)
 
+            // Shortcut Pointer to Div
+            let divCountdown = document.getElementById("divCount");
+
+            // Displays the Countdown to the webpage
+            divCountdown.textContent = days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
 
 
         }, 1000);
