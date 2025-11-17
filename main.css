@@ -22,3 +22,8 @@ header h1{
 main{
     padding-left: .5%;
 }
+
+#countMessage
+{
+    padding-bottom: .05%;
+}

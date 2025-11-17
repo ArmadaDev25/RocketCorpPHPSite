@@ -15,6 +15,7 @@
     </header>
     <main>
 
+        <div id=countMessage></div>  
         <!--Div that contains the countdown timer-->
         <div id="divCount"></div>
 
@@ -34,6 +35,7 @@
             // This variable will grab the current time
             let currentTime = new Date().getTime();
 
+            // Console Logs (FOR DEBUGGING)
             console.log("Timer Values")
             console.log(countdownTimer)
             console.log(currentTime)
@@ -52,7 +54,7 @@
             let minutes = Math.floor((timeDiff % MS_IN_AN_HOUR) / MS_IN_A_MINUTE);
             let seconds = Math.floor((timeDiff % MS_IN_A_MINUTE) / MS_IN_A_SECOND);
 
-            // Console Logs
+            // Console Logs (FOR DEBUGGING)
             console.log(days)
             console.log(hours)
             console.log(minutes)
@@ -63,6 +65,17 @@
 
             // Displays the Countdown to the webpage
             divCountdown.textContent = days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
+
+            let divCountDownMessage = document.getElementById("countMessage")
+
+            if (timeDiff < 0){
+                divCountDownMessage.textContent = "The Launch Has Already Happened. Stay Tuned For The Next One"
+            } else if (days < 7){
+                divCountDownMessage.textContent = days + " more days till launch!!"
+            } else if (days < 14){
+                divCountDownMessage.textContent = " Little over a week till launch! "
+
+            }
 
 
         }, 1000);
