@@ -15,11 +15,20 @@
     </header>
     <main>
         <form name="frmLogin" id="frmLogin" method="post" action="login.php">
+            <!-- username input-->
             <div>
                 <label for="txtUserName">Username:</label>
                 <input type="text" id="txtUserName" name="txtUserName">
-
             </div>
+            <!-- password input-->
+            <div>
+                <label for="txtPassword">Password:</label>
+                <input type="password" id="txtPassword" name="txtPassword">
+            </div>
+            <!-- password input-->
+            <button type="submit">Submit</button>
+            
+
         </form>
     </main> 
     
