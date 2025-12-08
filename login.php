@@ -1,3 +1,18 @@
+<?php
+
+$message = "";
+
+// check to see if the form was submitted
+if ($_SERVER['REQUEST_METHOD']  == 'POST'){
+    // variable to hold the user name
+    $username = $_POST['txtUserName'];
+    // variable to hold the password
+    $password = $_POST['txtPassword'];
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +29,7 @@
         <h1>Login</h1>
     </header>
     <main>
+        <p> <?php echo $message;?></p>
         <form name="frmLogin" id="frmLogin" method="post" action="login.php">
             <!-- username input-->
             <div>
