@@ -4,10 +4,24 @@ $message = "";
 
 // check to see if the form was submitted
 if ($_SERVER['REQUEST_METHOD']  == 'POST'){
+
+    // Include the database connection file here
+    require_once 'servercon.php';
+
     // variable to hold the user name
     $username = $_POST['txtUserName'];
     // variable to hold the password
     $password = $_POST['txtPassword'];
+
+    // Query the database for a match for the username and password
+    $sql = "SELECT empName, accountID FROM empaccounts WHERE username = '$username' AND password = '$password'";
+
+    // Print out the sql query
+    echo "sql = " . $sql . "<BR>";
+
+
+
+
 }
 
 ?>
