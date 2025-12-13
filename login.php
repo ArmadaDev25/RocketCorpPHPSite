@@ -19,6 +19,24 @@ if ($_SERVER['REQUEST_METHOD']  == 'POST'){
     // Print out the sql query
     echo "sql = " . $sql . "<BR>";
 
+    // run the query
+    $result = mysqli_query($db_conn, $sql);
+
+    // convert the query result into an array
+    $arrUser = mysqli_fetch_array($result);
+
+    // check to see if the user logged in correctly
+    if (isset($arrUser)){
+        $message = "Login Sucess";
+
+        // Redirect to the intranet page
+
+    }else{
+        $message = "Login Failed";
+
+    }
+
+
 
 
 
