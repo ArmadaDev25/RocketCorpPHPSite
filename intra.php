@@ -20,6 +20,10 @@ if($_SESSION['username'] ==""){
     <title>Intranet</title>
 </head>
 <body>
+    <header>
+        <?php include "menu.php"; ?>
+        <h1>Login</h1>
+    </header>
     
 </body>
 </html>
