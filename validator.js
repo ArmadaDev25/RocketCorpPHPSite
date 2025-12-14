@@ -49,7 +49,7 @@ function validateLogin(){
 
     }
     if (password.length == 0){
-        // Display message if the username does not have a valid entry
+        // Display message if the password does not have a valid entry
         errMessage.textContent="Please Enter a password";
         return false;
 

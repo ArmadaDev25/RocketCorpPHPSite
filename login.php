@@ -61,6 +61,8 @@ if ($_SERVER['REQUEST_METHOD']  == 'POST'){
 
     <!-- Link to Global CSS file -->
     <link rel="stylesheet" href="main.css">
+    <!--Link to the validator.js file-->
+    <script src="validator.js"></script>
 </head>
 <body>
     <header>
@@ -69,7 +71,9 @@ if ($_SERVER['REQUEST_METHOD']  == 'POST'){
     </header>
     <main>
         <p> <?php echo $message;?></p>
-        <form name="frmLogin" id="frmLogin" method="post" action="login.php">
+        <!--Div Message that is displayed if the data in the form is not valid-->
+        <div id="errorMessage"></div>
+        <form name="frmLogin" id="frmLogin" method="post" action="login.php" onsubmit="return validateLogin();">
             <!-- username input-->
             <div>
                 <label for="txtUserName">Username:</label>
