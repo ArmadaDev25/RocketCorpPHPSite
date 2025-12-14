@@ -36,3 +36,26 @@ function validateForm(){
 
 
 }
+
+function validateLogin(){
+    let form = document.frmLogin;
+    let user = form.txtUsername.value.trim();
+    let password = form.txtPassword.value.trim();
+
+    if (user.length == 0){
+        // Display message if the username does not have a valid entry
+        errMessage.textContent="Please Enter a username";
+        return false;
+
+    }
+    if (password.length == 0){
+        // Display message if the username does not have a valid entry
+        errMessage.textContent="Please Enter a password";
+        return false;
+
+    }
+    
+    
+    return true;
+
+}
