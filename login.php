@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $message = "";
 
@@ -29,10 +30,16 @@ if ($_SERVER['REQUEST_METHOD']  == 'POST'){
     if (isset($arrUser)){
         $message = "Login Sucess";
 
+        // set up a session variable to inicate that the user has logged in
+        $_SESSION['username'] = $username;
+
+
         // Redirect to the intranet page
+        header("Location: intra.php");
 
     }else{
         $message = "Login Failed";
+        $_SESSION['username'] = "";
 
     }
 
