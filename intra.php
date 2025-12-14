@@ -3,7 +3,7 @@ session_start();
 // the user must be logged in to access this page
 if($_SESSION['username'] ==""){
     // Redirect to the intranet page
-    header("Location: intra.php");
+    header("Location: login.php");
 
 
 }
@@ -22,8 +22,9 @@ if($_SESSION['username'] ==""){
 <body>
     <header>
         <?php include "menu.php"; ?>
-        <h1>Login</h1>
+        <h1>Welcome to the Employee Intranet</h1>
     </header>
     
 </body>
+    <h2>Your Tasks</h2>
 </html>

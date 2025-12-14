@@ -38,9 +38,13 @@ function validateForm(){
 }
 
 function validateLogin(){
+    console.log("called");
     let form = document.frmLogin;
-    let user = form.txtUsername.value.trim();
-    let password = form.txtPassword.value.trim();
+    let user = form.txtUsername.value;
+    let password = form.txtPassword.value;
+    // Error Message Element Shortcut
+    let errMessage = document.getElementById("errorMessage");
+    console.log("this is the username" + user);
 
     if (user.length == 0){
         // Display message if the username does not have a valid entry

@@ -17,8 +17,7 @@ if ($_SERVER['REQUEST_METHOD']  == 'POST'){
     // Query the database for a match for the username and password
     $sql = "SELECT empName, accountID FROM empaccounts WHERE username = '$username' AND password = '$password'";
 
-    // Print out the sql query
-    echo "sql = " . $sql . "<BR>";
+   
 
     // run the query
     $result = mysqli_query($db_conn, $sql);
@@ -70,9 +69,10 @@ if ($_SERVER['REQUEST_METHOD']  == 'POST'){
         <h1>Login</h1>
     </header>
     <main>
-        <p> <?php echo $message;?></p>
         <!--Div Message that is displayed if the data in the form is not valid-->
         <div id="errorMessage"></div>
+        <p> <?php echo $message;?></p>
+        
         <form name="frmLogin" id="frmLogin" method="post" action="login.php" onsubmit="return validateLogin();">
             <!-- username input-->
             <div>

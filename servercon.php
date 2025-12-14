@@ -8,10 +8,5 @@
     $db_conn = mysqli_connect($db_servername, $db_username, $db_password, $db_name, $db_port);
  
     // if this if statement is true, it means the database connection failed
-    if(!$db_conn){
-        echo "connection failed.";
-    }else{
-        echo "connection success.";
-
-    }
+   
 ?>

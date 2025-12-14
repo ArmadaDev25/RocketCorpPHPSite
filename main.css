@@ -9,6 +9,11 @@ nav{
 
     background-color: rgb(253, 193, 115);
     padding: .5%;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 input {
